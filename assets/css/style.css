@@ -98,6 +98,10 @@ body {
 font-family: 'Crimson Text', serif;
 font-size: 150%;
 }
+.contents .principal h3 {
+  font-family: 'Sansita Swashed', cursive;
+font-size: 150%;
+}
 .contents img {
   display: block;
   margin: auto;
