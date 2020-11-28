@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500;800&family=Crimson+Text:ital,wght@0,400;1,400;1,600&family=Playfair+Display:ital,wght@0,400;1,700&family=Sansita+Swashed:wght@300;400;800&family=Texturina:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Work+Sans:wght@100;200;300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +10,8 @@ body {
   background: no-repeat fixed center;
   background-size: cover;
   color: #000022;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
 }
@@ -22,18 +24,19 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 5, auto;
 
-  grid-template-areas: "logo leaded leaded"
-                        "principal principal principal"
-                        "widget-1 widget-2 widget-3"
-                        "moreinfo moreinfo moreinfo"
-                        "footer footer footer"; 
-                      
-
+  grid-template-areas:
+    "logo leaded leaded"
+    "principal principal principal"
+    "widget-1 widget-2 widget-3"
+    "moreinfo moreinfo moreinfo"
+    "footer footer footer";
 }
 .contents > div,
 .contents .leaded,
 .contents .logo,
 .contents .principal,
+.contents .principal p,
+.contents .principal p img,
 .contents .moreinfo,
 .contents .footerspace {
   background: #fffffffa;
@@ -43,14 +46,16 @@ body {
 .contents .leaded {
   background-color: rgba(0, 0, 0, 0.774);
   text-align: right;
+  font-family: "Texturina", serif;
+  font-size: 150%;
   grid-area: leaded;
 }
-.contents .leaded #nav {
+.contents .leaded nav {
   text-align: center;
-  margin: 3% auto;
+  margin: 6% auto;
 }
 .contents .logo {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: #e5474b;
   font-size: 1.5em;
   text-align: center;
@@ -59,9 +64,11 @@ body {
   font-weight: normal;
   grid-area: logo;
 }
-.contents .logo #img{
-  align-items: center;
-  height: 20%;
+.contents .logo img {
+  display: block;
+  margin: 15% auto;
+  height: 50px;
+  width: auto;
 }
 .contents .leaded a {
   -moz-transition: color 0.3s ease-in-out;
@@ -71,19 +78,31 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: right;
-  font-size: .85em;
+  font-size: 0.85em;
   margin: 0 10px;
   color: #e5474b;
 }
 .contents .leaded a:hover {
-    color: rgba(233, 17, 24, 0.75);
-  }
+  color: rgba(233, 17, 24, 0.75);
+}
 
-.contents .principal {
+.contents .principal,
+.contents img {
   text-align: justify;
   grid-area: principal;
 }
-
+.contents .principal h1 {
+  font-family: "Sansita Swashed", cursive;
+}
+.contents .principal p {
+font-family: 'Crimson Text', serif;
+font-size: 150%;
+}
+.contents img {
+  display: block;
+  margin: auto;
+  border-radius: 25%;
+}
 .contents .widget-1,
 .contents .widget-2,
 .contents .widget-3 {
@@ -93,7 +112,7 @@ body {
   height: 20em;
   width: 80%;
   border-radius: 8px;
-  box-shadow: 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 20px;
   text-align: center;
@@ -113,6 +132,13 @@ body {
 .contents .widget-3 img {
   width: 330px;
   height: 220px;
+}
+.contents .widget-1 h3,
+.contents .widget-2 h3,
+.contents .widget-3 h3 {
+  color: aquamarine;
+  margin: auto 20%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .contents .widget-1 {
   grid-area: widget-1;
@@ -140,14 +166,14 @@ body {
 }
 @media screen and (max-width: 768px) {
   .contents {
-    grid-template-areas: "logo logo logo"
-                        "leaded leaded leaded"
-                        "principal principal principal"                        
-                        "widget-1 widget-1 widget-1"
-                        "widget-2 widget-2 widget-2"
-                        "widget-3 widget-3 widget-3"
-                        "moreinfo moreinfo moreinfo"
-                        "footer footer footer";
+    grid-template-areas:
+      "logo logo logo"
+      "leaded leaded leaded"
+      "principal principal principal"
+      "widget-1 widget-1 widget-1"
+      "widget-2 widget-2 widget-2"
+      "widget-3 widget-3 widget-3"
+      "moreinfo moreinfo moreinfo"
+      "footer footer footer";
   }
 }
-
