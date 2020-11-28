@@ -95,12 +95,12 @@ body {
   font-family: "Sansita Swashed", cursive;
 }
 .contents .principal p {
-font-family: 'Crimson Text', serif;
-font-size: 150%;
+  font-family: "Crimson Text", serif;
+  font-size: 150%;
 }
 .contents .principal h3 {
-  font-family: 'Sansita Swashed', cursive;
-font-size: 150%;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 150%;
 }
 .contents img {
   display: block;
@@ -121,7 +121,7 @@ font-size: 150%;
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
-  position:relative;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,10 +143,10 @@ font-size: 150%;
 .contents .widget-3 h3 {
   color: rgba(212, 14, 153, 0.863);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position:absolute;
-    bottom:5px;
-    right:10px;
-    text-align: end;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  text-align: end;
 }
 .contents .widget-1 {
   grid-area: widget-1;
@@ -167,11 +167,11 @@ font-size: 150%;
   min-height: 100px;
   grid-area: moreinfo;
 }
-.contents .moreinfo h2{
-  font-family: 'Playfair Display', serif;
+.contents .moreinfo h2 {
+  font-family: "Playfair Display", serif;
 }
 .contents .moreinfo p {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-size: 120%;
 }
 .contents .footerspace {
@@ -182,7 +182,7 @@ font-size: 150%;
 }
 .contents .footerspace .signing {
   color: #e7575c;
-  font-family: 'Sansita Swashed', cursive;
+  font-family: "Sansita Swashed", cursive;
   font-size: 120%;
 }
 @media screen and (max-width: 768px) {
